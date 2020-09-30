@@ -106,5 +106,13 @@ make
 ./xkbmon
 ```
 
+## Build for Ubuntu with Docker
+
+```sh
+docker build . -t xkbmon-buildenv
+docker run -v $PWD:/source xkbmon-buildenv make
+./xkbmon
+```
+
 ## License
 [MIT](/LICENSE.MIT)
